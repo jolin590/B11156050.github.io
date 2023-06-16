@@ -158,6 +158,29 @@ a:hover{
         display: none;
         float: right;
     }
+    a {
+        display: block;
+        width: 100%;
+        line-height: 80px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #000000;
+    }
+    a:hover {
+        color: #5f2e2e;
+        background-color: #ff3c00;
+    }
+    .line a {
+        display: inline;
+        line-height: 30px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #ff0000;
+    }
+    .line a:hover {
+        color: #000000;
+        background-color: #f0f480;
+    }
 *,
 *:before,
 *:after {
@@ -291,6 +314,32 @@ h2 {
         object-fit: cover;
         
     }
+    a {
+        display: block;
+        width: 100%;
+        line-height: 80px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #3a3a3a;
+    }
+
+    a:hover {
+        color: #5f2e2e;
+        background-color: #ff3c00;
+    }
+
+    .line a {
+        display: inline;
+        line-height: 30px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #ff0000;
+    }
+    
+    .line a:hover {
+        color: #1892e4;
+        background-color: #4aff32;
+    }
 }
 
 @media (max-width: 799px) and (min-width: 401px) {
@@ -310,6 +359,32 @@ h2 {
         height: 100%;
         object-fit: cover;
         
+    }
+    a {
+        display: block;
+        width: 100%;
+        line-height: 80px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #3a3a3a;
+    }
+
+    a:hover {
+        color: #5f2e2e;
+        background-color: #ff3c00;
+    }
+
+    .line a {
+        display: inline;
+        line-height: 30px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #ff0000;
+    }
+    
+    .line a:hover {
+        color: #1892e4;
+        background-color: #4aff32;
     }
 }
 

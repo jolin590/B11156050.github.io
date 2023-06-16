@@ -1,24 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>團體資訊</title>
-    <style>
-        .group-info {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .group-info h4 {
-            flex: 1 1 100%;
-            margin: 0;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>婁峻碩介紹</title>
+    <link rel="stylesheet" type="text/css" href="c.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-    <h3>團體</h3>
-    <div class="group-info">
-        <h4>2018年底，與高爾宣OSN、ChrisFlow唐仲彣、RED芮德四人組成饒舌團體 <a href="https://zh.wikipedia.org/zh-tw/CHING_G_SQUAD" target="_blank">CHING G SQUAD</a>。</h4>
-        <h4>2020年7月14日，加入陳零九、邱鋒澤、黃偉晉和賴晏駒的團體《W0LF四堅情》，正式拓編成《W0LF(S)五堅情》</h4>
+    <center><h2>婁峻碩影視作品</h2></center>
+    <section class="headerNav">
+        <div class="container">
+            <h1 class="logo"></h1>
+            <i class="fas fa-bars" id="mobileMenu"></i>
+            <ul class="mainNav">
+                <li class="navItem">
+                    <a href="index.html">回首頁</a>
+                </li>
+                <li class="navItem">
+                    <a href="a.html">藝人簡介</a>
+                </li>
+                <li class="navItem">
+                    <a href="b.html">音樂作品</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <center><h3>主持</h3></center>
+    <div class="wrap">
+        <ul class="news clearfix">
+            <li>
+                <p>娛樂百分百（代班）</p>
+                <img src="28.jpg" alt="">
+            </li>
+            <li>
+                <p>Carry吧 玩家們</p>
+                <img src="29.jpg" alt="">
+            </li>
+            <li>
+                <p>嗨！營業中2</p>
+                <img src="30.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+    <center><h3>綜藝節目</h3></center>
+    <div class="wrap">
+        <ul class="news clearfix">
+            <li>
+                <p>叮咚五堅情第一季</p>
+                <img src="31.jpg" alt="">
+            </li>
+            <li>
+                <p>叮咚五堅情第二季</p>
+                <img src="32.jpg" alt="">
+            </li>
+            <li>
+                <p>叮咚五堅情第三季</p>
+                <img src="33.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+    <center><h3>電影、廣播劇、影集</h3></center>
+    <div class="wrap">
+        <ul class="news clearfix">
+            <li>
+                <p>我吃了那男孩一整年的早餐</p>
+                <img src="34.jpg" alt="">
+            </li>
+            <li>
+                <p>我的媒人時代</p>
+                <img src="35.jpg" alt="">
+            </li>
+            <li>
+                <p>百萬人推理</p>
+                <img src="36.jpg" alt="">
+            </li>
+        </ul>
     </div>
 </body>
+<script>
+    var mobileMenu = document.getElementById("mobileMenu");
+    var mainNav = document.querySelector(".mainNav");
+    var headerNav = document.querySelector(".headerNav");
+
+    mobileMenu.addEventListener("click", function() {
+    mainNav.classList.toggle("mainNavShow");
+    headerNav.classList.toggle("headerNavShow");
+    });
+</script>
 </html>

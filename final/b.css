@@ -12,9 +12,9 @@ a{
 }
 a:hover{
     color: #5f2e2e;
-    background-color: skyblue;
+    background-color: #ff3c00;
 }
-img{ /*文章圖片*/
+img{
     max-width: 100%;
     vertical-align: middle;
 }
@@ -30,17 +30,15 @@ img{ /*文章圖片*/
     text-align: center;
     font-size: 30px;
     color: #fff;
-    background-color: #04404b;
+    background-color: #72409b;
 }
-
-
 .headerNav{
-   background-color: #eae0d0;
-   height: 80px;
-   position: relative;
+    background-color: #7ad2da;
+    height: 80px;
+    position: relative;
 }
 .headerNavShow{
-    background-color: #eae0d0;
+    background-color: #7ad2da;
     height: 80px;
     position: relative;
 }
@@ -72,7 +70,7 @@ img{ /*文章圖片*/
 }
 
 .userAccount{
-   display: none;
+    display: none;
 }
 .logo::after,
 .userAccount::after{
@@ -82,7 +80,7 @@ img{ /*文章圖片*/
 .mainNav{
     width: 100%;
     height: 100vh;
-    background:  #cebba2;
+    background:  #d09898;
     position: absolute;
     top: 80px;
     left: -100%;
@@ -91,24 +89,31 @@ img{ /*文章圖片*/
 .mainNavShow{
     width: 100%;
     height: 100vh;
-    background:  #cebba2;
+    background:  #d09898;
     position: absolute;
     top: 80px;
     left: 0;
     transition: .5s ease-in-out;
 }
 .mainNav .navItem{
+    width: 100%;
     text-align: center;
-    border-bottom: 2px dashed gray;
+    list-style: none;
 }
 .mainNav .navItem:first-child{
-    background-color: #774b0d;
+    background-color: #c6ac18;
 }
 .mainNav .navItem:nth-child(2){
-    background-color: #144210;
+    background-color: #9d6ad0;
+}
+.mainNav .navItem:nth-child(3){
+    background-color: #2ec821;
 }
 .mainNav .navItem:first-child a,
 .mainNav .navItem:nth-child(2) a{
+    color: #fff;
+}
+.mainNav .navItem:nth-child(3) a{
     color: #fff;
 }
 
@@ -116,76 +121,25 @@ img{ /*文章圖片*/
     left: 0;
 }
 
-.exercise{
-    position: relative;
-}
-.exercise:hover{
-    background-color: #e4c58d;
-}
-.exercise:hover .exerciseList{
-    display: block;
-}
-
-.exerciseList{
-    display: none;
-    width: 100%;
-    padding: 15px;
-    background-color: #e4c58d;
-    position: absolute;
-    top: 100%;
-    left: 0;
-}
-.exerciseList .exerciseForList{
-    border: 2px dashed gray;
-    background-color: #c08d76;
-    margin-top: -2px;
-}
-.exerciseList .exerciseForList:hover{
-    background-color: #a09380;
-}
-
-
-
-/* XX-Large Device */
 @media(min-width: 1024px){
     #mobileMenu{
         visibility:hidden
     }
     .mainNav{
-        background: #eae0d0;
-        width: 70%;
+        background: #7ad2da;
+        width: 90%;
         height: 80px;
         top:0;
         left: 0;
         right: 0;
         margin: auto;
-        text-align: right;
+        text-align: center;
         font-size: 0;
-        /*     
-            問題：擋住userAccount
-            display: flex;
-            justify-content: flex-end; 
-        */
     }
     .mainNav .navItem{
         display: inline-block;
-        width: 120px;
+        width: 350px;
         border-bottom: none;
-        
-    }
-    .exerciseList .exerciseForList{
-        border: none;
-        background-color: #bdb4a7;
-        margin-top: 0px;
-    }
-    
-    .exerciseList{
-        width: 120px;
-        padding: 0;
-        background-color: #bdb4a7;
-    }
-    .exerciseList .exerciseForList{
-        border-top: 2px dashed gray;
     }
     .userAccount{
         display: block;
@@ -197,20 +151,11 @@ img{ /*文章圖片*/
         float: right;
         
     }
-
-
-
-    *,
+*,
 *:before,
 *:after {
     box-sizing: border-box;
 }
-
-/* img {
-    max-width: 100%;
-    height: auto;
-    
-} */
 
 .clearfix:after {
     content: '';
@@ -223,13 +168,12 @@ body {
 }
 
 .wrap li {
-    flex: 0 0 25%;  /* 每行最多容納4個項目 */
+    flex: 0 0 25%; 
     box-sizing: border-box;
     padding: 10px;
     text-align: center;
 }
 
-    
 }
 
 .wrap {
@@ -239,25 +183,23 @@ body {
 }
 
 .wrap ul {
-    display: flex;  /* 使用彈性盒子模型 */
-    flex-wrap: wrap;  /* 允許多行 */
+    display: flex;  
+    flex-wrap: wrap; 
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-
 h2 {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
-    padding-bottom: 1em;
 }
- 
+
 @media (min-width: 570px) and (max-width: 1023px) {
     .wrap li {
         flex-basis: 50%; 
     }
-    img{ /*文章圖片*/
+    img{
         width: 50%;
         vertical-align: middle;
     }
@@ -266,13 +208,11 @@ h2 {
     }
 } 
 
-  
-
 @media(max-width:569px) {
     .wrap li {
-        width: 100%;/*100%記得扣除768px以上的左右margin共4%*/
+        width: 100%;
     }
-    img{ /*文章圖片*/
+    img{ 
         max-width: 95%;
         vertical-align: middle;
     }
