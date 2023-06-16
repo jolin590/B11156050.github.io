@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嘻哈歌手婁峻碩介紹</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <center><h2>藝人介紹－婁峻碩</h2></center>
+    <section class="headerNav">
+        <div class="container">
+            <h1 class="logo"></h1>
+            <i class="fas fa-bars" id="mobileMenu"></i>
+            <ul class="mainNav">
+                <li class="navItem">
+                    <a href="a.html">藝人簡介</a>
+                </li>
+                <li class="navItem">
+                    <a href="b.html">音樂作品</a>
+                </li>
+                <li class="navItem">
+                    <a href="c.html">影視作品</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+        <div class="slide">
+            <input type="radio" name="sildeInput" value="0" id="sildeInput1" checked hidden/>
+            <label for="sildeInput1">1</label>
+            <input type="radio" name="sildeInput" value="1" id="sildeInput2" hidden/>
+            <label for="sildeInput2">2</label>
+            <input type="radio" name="sildeInput" value="1" id="sildeInput3" hidden/>
+            <label for="sildeInput3">3</label>
+            <input type="radio" name="sildeInput" value="1" id="sildeInput4" hidden/>
+            <label for="sildeInput4">4</label>
+            <input type="radio" name="sildeInput" value="1" id="sildeInput5" hidden/>
+            <label for="sildeInput5">5</label>
+            <ul>
+                <li><img src="4.jpg" alt=""></li>
+                <li><img src="2.jpg" alt=""></li>
+                <li><img src="3.jpg" alt=""></li>
+                <li><img src="5.jpg" alt=""></li>
+                <li><img src="1.jpg" alt=""></li>
+            </ul>
+            
+        </div>
+        <center><h5>FB:https://www.facebook.com/shoumethemoneyxx/?locale=zh_TW</h5></center>
+        <center><h5>IG:https://www.instagram.com/shoumethemoneyxx/</h5></center>
+        <script>
+            var mobileMenu = document.getElementById("mobileMenu");
+            var mainNav = document.querySelector(".mainNav");
+            var headerNav = document.querySelector(".headerNav");
+            var slide = document.querySelector(".slide");
+        
+            mobileMenu.addEventListener("click", function() {
+            mainNav.classList.toggle("mainNavShow");
+            headerNav.classList.toggle("headerNavShow");
+            slide.classList.toggle("slideBehind");
+            });
+        </script>
+</html>
